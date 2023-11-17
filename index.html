@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+    <title>CreditScore Prediction</title>
+<style>
+    .check_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+    margin: 8px;
+    } 
+    .login{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    }
+    .spacing{
+        margin-bottom: 15px;
+    }
+    .drop_down{
+    display: flex;
+    /* justify-content: space-between; */
+    }
+    .margin_left{
+margin-left: 25px;
+display: flex;
+    }
+</style>
+</head>
+
+
+<body>
+    <div class="alert alert-success alert-dismissible fade show text-center mb-0" role="alert"> <strong>Welcome to CreditScore Prediction API</strong> <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button> </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid"> <a class="navbar-brand text-warning" href="#">CreditScore Prediction</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Analysis</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">About us</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Contact us</a> </li>
+                </ul>
+                <form class="d-flex"> <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> <button class="btn btn-outline-success" type="submit">Search</button> </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators"> <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button> <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active"> <img src="https://source.unsplash.com/1600x700/?money,bank" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>CreditScore prediction</h5>
+                    <p>In this project our top priority is to predict Creditscore.</p>
+                </div>
+            </div>
+            <div class="carousel-item"> <img src="https://source.unsplash.com/1600x600/?office" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Credit Score prediction</h5>
+                    <p>In this project our top priority is to predict Creditscore.</p>
+                </div>
+            </div>
+            <div class="carousel-item"> <img src="https://source.unsplash.com/1600x600/?loan,atm,money,creditcard" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Credit score prediction</h5>
+                    <p>In this project our top priority is to predict Creditscore.</p>
+                </div>
+            </div>
+        </div> <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="visually-hidden">Previous</span> </button> <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="visually-hidden">Next</span> </button>
+    </div>
+    <div class="container">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h2 class="fw-normal">Fill this form to predict Creditscore.</h2>
+            <p class=" text-muted"><b>Your credit score is more than just a number. A better score can help unlock the things you want most — like a new credit card or the best loan rates in the market.</b> </p>
+        </div>
+</body>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="login">
+        <h1>Check your Credit Score</h1>
+    </div>
+    <div class="container">
+        <form action="{{ url_for('predict')}}" method="post">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group spacing"> 
+                       <div class="drop_down">
+                        <label for="month">Month </label>
+                        <div class="margin_left">
+                            <select name="month" id="month" placeholder="Enter the month.." required="required">
+                                <option value="0">April</option>
+                                <option value="1">August</option>
+                                <option value="2">February</option>
+                                <option value="3">January</option>
+                                <option value="4">July</option>
+                                <option value="5">June</option>
+                                <option value="6">March</option>
+                                <option value="7">May</option>
+                                </select>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="form-group spacing"> <label for="age">Age</label> <input class="form-control" type="text" name="AGE" placeholder="Enter your age.." required> </div>
+                    <div class="form-group spacing"> 
+                        <div  class="drop_down">
+                            <label for="occupation">Occupation </label>
+                                <div class="margin_left">
+                                    <select name="occupation" id="occupation" placeholder="Enter your occupation.." required="required">
+                                    <option value="0">Accountant</option>
+                                    <option value="1">Architect</option>
+                                    <option value="2">Developer</option>
+                                    <option value="3">Doctor</option>
+                                    <option value="4">Engineer</option>
+                                    <option value="5">Entrepreneur</option>
+                                    <option value="6">Journalist</option>
+                                    <option value="7">Lawyer</option>
+                                    <option value="8">Manager</option>
+                                    <option value="9">Mechanic</option>
+                                    <option value="10">Media Manager</option>
+                                    <option value="11">Musician</option>
+                                    <option value="12">Scientist</option>
+                                    <option value="13">Teacher</option>
+                                    <option value="14">Writer</option>
+                                    </select>
+                                </div>    
+                        </div>
+                    </div>
+                    <div class="form-group spacing"> <label for="annual_income">Annual Income</label> <input class="form-control" type="text" name="AI" placeholder="Income in dollars.." required> </div>
+                    <div class="form-group spacing"> <label for="mon_is">Monthly Inhand Salary</label> <input class="form-control" type="text" name="MIS" placeholder="Salary in dollars.." required> </div>
+                   
+                    <div class="form-group spacing"> <label for="ncc">Number of Credit Cards</label> <input class="form-control" type="text" name="NCC" placeholder="Income in dollars.." required> </div>
+                    <div class="form-group spacing"> <label for="ir">Interest Rate</label> <input class="form-control" type="text" name="IR" placeholder="Interest rate.." required> </div>
+                    <div class="form-group spacing"> <label for="nol">Number of Loans</label> <input class="form-control" type="text" name="NOL" placeholder="No. of loans.." required> </div>
+                    <div class="form-group spacing"> <label for="dfdd">Delay from due date</label> <input class="form-control" type="text" name="DFDD" placeholder="Delay in days.." required> </div>
+                    <div class="form-group spacing"> <label for="ndp">Number of Delayed Payments</label> <input class="form-control" type="text" name="NDP" placeholder="No. of delays.." required> </div>
+                    
+                </div>
+                    <div class="col-sm-6">
+                        
+                    <div class="form-group spacing"> <label for="ccl">Changed Credit Limit</label> <input class="form-control" type="text" name="CCL" placeholder="Changed credit limit.." required> </div>
+                    <div class="form-group spacing"> <label for="nci">Number of Credit Inquiries</label> <input class="form-control" type="text" name="NCI" placeholder="No. of inquiries.." required> </div>
+                  
+                    <div class="form-group spacing"> <label for="od">Outstanding Debt</label> <input class="form-control" type="text" name="OD" placeholder=" Debt in dollars.." required> </div>
+                    <div class="form-group spacing"> <label for="cur">Credit Utilization ratio</label> <input class="form-control" type="text" name="CUR" placeholder="Credit utilization ratio.." required> </div>
+                    <div class="form-group spacing"> <label for="cha">Credit History Age</label> <input class="form-control" type="text" name="CHA" placeholder="Credit History in months.." required> </div>
+                    <div class="form-group spacing"><label for="pmm">Payment of Minimum Amount</label>
+                        <br>
+                    <input type="radio" name="payment_of_min_amount" value="1" required> Yes<br>
+                    <input type="radio" name="payment_of_min_amount" value="0" required> No<br>
+                    </div>
+                    <div class="form-group spacing"> <label for="temi">Total EMI per month</label> <input class="form-control" type="text" name="TEMI" placeholder="EMI in dollars.." required> </div>
+                    <div class="form-group spacing"> <label for="aim">Amount Invested monthly</label> <input class="form-control" type="text" name="AIM" placeholder="Amount in dollars.." required> </div>
+                    <div class="form-group spacing"> <label for="mb">Monthly Balance</label> <input class="form-control" type="text" name="MB" placeholder="Balance in dollars.." required> </div> 
+                       
+                    </div>    
+                </div>              
+            <div class="check_btn">
+                <button type="submit" class="btn btn-primary">Check</button>       
+            </div>  
+        </form>
+        <div id="result">
+            <p class="resultscore" <mark style="color:#f96d00;font-family:didot;font-weight: bold; word-spacing: 2px;text-align: center;font-size:26px;left:0; line-height:50px; margin-top: -75px; position: absolute;  top: 50%; width: 100%;background: white;">{{ prediction_text }}</mark></p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+
+</html>
