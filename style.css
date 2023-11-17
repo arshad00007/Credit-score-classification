@@ -1,0 +1,274 @@
+ body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/op-credit-card.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 0px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.login {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(192, 192, 192, 0.7);
+    margin-top: 25px;
+    color: #c90404;
+    padding: 15px 0px 10px 0px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 0px 0px 0px 0px;
+    text-underline-offset: 8px;
+}
+
+.main {
+    background-color: rgb(192, 192, 192, 0.7);
+    width: 100%;
+    margin: auto;
+    height: 550px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0px;
+}
+
+input {
+    display: inline-block;
+    width: 150px;
+    padding: 10px 10px;
+    margin: 25px 0px 0px 10px;
+    height: 40px;
+}
+.d-flex{
+    display:inline-block;
+    width: 250px;
+    padding: 10px 10px;
+    margin: 7px 0px 0px 0px;
+    height: 100px;
+}
+
+input:select {
+    color: white;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input:focus {
+    border: 3px solid #DCCDB2;
+}
+
+.input {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    height: 2px;
+    width: 100px;
+    font-size: 18px;
+
+}
+
+#CS {
+    font-size: 18px;
+}
+
+.age {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.annual_income {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.mon_is {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.nba {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.ncc {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.ir {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.nol {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.dfdd {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.ndp {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.ccl {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.nci {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.od {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.cur {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.cha {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.temi {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.aim {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.m_b {
+    position: relative;
+    left: 170px;
+    top: 0px;
+    line-height: 40px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #c90404;
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 12px;
+    border: 2px solid #A60303;
+    padding: 8px 20px;
+    outline: white;
+    color: white;
+    cursor: pointer;
+    transition: 0.25px;
+    font-size: 18px;
+}
+
+
+
+&:active {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset;
+}
+}
+    
+    
+    
